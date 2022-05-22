@@ -4,8 +4,6 @@ auto_deploy: false
 admin_path: _admin
 webhook_url: 
 sections:
-- type: heading
-  label: Heading
 - type: document
   path: document
   label: 'Document '
@@ -16,6 +14,8 @@ sections:
   label: Directory
   create: all
   match: "**/*"
+- type: heading
+  label: Heading
 upload_dir: "./static/uploads"
 public_path: "/uploads"
 front_matter_path: ''
