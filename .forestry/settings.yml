@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: _admin
 webhook_url: 
 sections:
-- type: document
-  path: document
-  label: 'Document '
-  match: "**/*"
-  read_only: false
 - type: directory
   path: content-directory
   label: Directory
@@ -16,6 +11,11 @@ sections:
   match: "**/*"
 - type: heading
   label: Heading
+- type: document
+  path: document
+  label: 'Document '
+  match: "**/*"
+  read_only: false
 upload_dir: "./static/uploads"
 public_path: "/uploads"
 front_matter_path: ''
