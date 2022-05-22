@@ -4,9 +4,16 @@ auto_deploy: false
 admin_path: _admin
 webhook_url: 
 sections:
+- type: heading
+  label: Heading
+- type: document
+  path: document
+  label: 'Document '
+  match: "**/*"
+  read_only: false
 - type: directory
-  path: ''
-  label: Sidebar label
+  path: content-directory
+  label: Directory
   create: all
   match: "**/*"
 upload_dir: "./static/uploads"
